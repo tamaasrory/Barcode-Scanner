@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topLayout"
+        android:orientation="horizontal"
+        android:background="#03a9f4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <net.tajriy.presenter.CameraSourcePreview
+            android:id="@+id/preview"
+            android:layout_width="match_parent"
+            android:background="#aa00ff"
+            android:layout_height="match_parent">
+        <net.tajriy.presenter.GraphicOverlay
+                android:id="@+id/overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </net.tajriy.presenter.CameraSourcePreview>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#b8000000">
+        <ListView
+                android:id="@+id/list_barang_dibeli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </ListView>
+    </LinearLayout>
+</RelativeLayout>
